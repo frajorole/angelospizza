@@ -33,7 +33,7 @@ return (
           <img src='https://w7.pngwing.com/pngs/505/761/png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette.png' style={{width:"50px"}} alt='si'></img>
         </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Hola 🍔 {username} 🍕.
+          Hola 🍔 {username} 🍕
         </Typography>
         
         <img width="50" height="50" style={{marginRight: '30px'}} src={compras} alt="Carrito"/>
