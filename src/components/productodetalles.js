@@ -5,9 +5,6 @@ import { useNavigate, useParams} from 'react-router-dom';
 import Profile from './navbar';
 import Footer from './footer';
 
-
-
-
 const ProductosDetalle = (event) => {
 
   const navigate = useNavigate()
@@ -24,13 +21,14 @@ const ProductosDetalle = (event) => {
   if(!esteProducto){
     return (
         <div>
-          <h1>NO HAY PRODUCTOS CON ESE ID</h1>
+          <h1>NO HAY PRODUCTOS CON ESE ID.</h1>
         </div>
       )
   }
   return (
     <>
     < Profile />
+    
     <div id='contenedor' >
         <div id='detalles' > 
         <h1>{esteProducto.name}</h1>
@@ -42,10 +40,10 @@ const ProductosDetalle = (event) => {
         <div className='btback'>
           <button onClick={back}>Atras</button>
         </div>
-        
+        <div className="footer">
+     < Footer />
     </div>
-   
-    < Footer />
+    </div>
     </>
   )
   
